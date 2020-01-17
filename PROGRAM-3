@@ -1,0 +1,27 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+double power(double x,int y=2);
+int main()
+{
+	int y;
+double x ,result;
+cout<<"enter base (except 0) and power";
+cin>>x>>y;
+result=power(x,y);
+cout<<"the result"<<result;
+cout<<"\n when the value of power is not given";
+result=power(x);
+cout<<"\n result is "<<result;
+}
+double power(double x ,int y)
+{
+	double m=1.0;
+	if (y==0)
+	return 1;
+	else for (int i=1; i<=y;i++)
+	m=m*x;
+
+	return m;
+}
+
